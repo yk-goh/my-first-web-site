@@ -1,0 +1,87 @@
+<!-- doctype html--> 
+    <!-- html 코드라서 관용적으로 위와 같이 표기해준다-->
+<html> <!-- html로 시작하고 끝난다. 그 사이에는 head/head, body/body가 있다-->
+
+
+<!-- html의 모든 태그는 head/head 사이에 놓이거나 body/body 사이에 놓여야 한다-->
+<head>
+    <!-- 웹페이지의 제목(탭에 표시되는)은 title 태그로 지정한다-->
+    <title>WEB1 HTML</title>>
+    <meta charset="utf-8">
+</head>
+
+
+<body>
+    <!-- a 태그로 링크를 건다. href는 hyperText Reference라는 뜻.-->
+    <!-- 새 탭에서 링크가 열리게 하고 싶다면 target="_blank"로 지정한다-->
+    <!-- 툴팁으로 무슨 링크인지 정보를 주고 싶다면 title 속성을 지정한다-->
+    <a href="https://html.spec.whatwg.org/multipage/" target="_blank" title="궁금하지롱?">
+        html</a>이란 무엇인가? <!-- 한글이 깨진다: 인코딩 이슈. 코드 하단에서 UTF-8로 저장되었음을 확인.-->
+
+    <!-- 줄바꿈으로 어설프게 목차를 흉내낼 수 있지만... li 태그를 사용하는 편이 낫다-->
+    1. HTML <br>2. CSS <br>3. JavaScript
+
+    <li><a href="test1.html">1. HTML</a></li>
+    <li><a href="test2.html">2. CSS</a></li>
+    <li><a href="test3.html">3. JavaScript</a></li>
+    <!-- 목록은 li 태그를 사용하여 만든다-->
+    <!-- option 키 누른 상태에서 클릭클릭하면 여러 곳에 커서를 만들 수 있다-->
+
+    <ul> <!-- unordered list -->
+        <li>Cherry</li>
+        <li>Hodong </li>
+        <li>Boree</li>
+        <li>Anna</li>
+    </ul>
+
+
+    <ol> <!-- ordered list -->
+        <li>Cherry</li>
+        <li>Hodong </li>
+        <li>Boree</li>
+        <li>Anna</li>
+    </ol>
+
+    <h1>HTML</h1>
+    our little girl <strong><u>Cherry</u> is extremely adorable.</strong> 
+    <br>even her chubby belly is. 
+    long live Cherry! 
+    <p>this is new paragraph</p><br><br><br> 
+    <p>this is new paragraph the second</p>
+    <!--줄바꿈(br)과 문단바꿈 중 의미값이 있는 태그를 사용한다. 
+        문단바꿈은 시각적 자유도가 낮지만 CSS로 해결할 수 있다.-->
+    <p style="margin-top:40px;"></p>
+    <h1>W3C</h1>
+    <h1> This is heading 1</h1>
+    <h2> This is heading 2 </h2>
+    <h3> This is heading 3 </h3>
+    <h4> This is heading 4 </h4>
+    <h5> This is heainng 5 </h5>
+    <h6> This is heading 6 </h6>
+
+    <!------------------------------------------------------------------>
+
+    <span style="font-size:24px"> coding </span>
+    <h3>coding</h3>
+    <!--위 둘은 시각적으로 동일하지만 후자는 제목으로 취급되어 검색엔진에 잘 나타나고, 전자는 안 나타난다-->
+    <!--비즈니스 측면에서 아주 중요한 이슈!-->
+
+    <!-- 웹 접근성 측면에서도, 텍스트를 이미지로 처리하지 않아야 함-->
+
+    <!------------------------------------------------------------------>
+
+    <!--이미지를 추가할 때 img 태그를 사용한다-->
+    <!--VS code에서 본 프로젝트 폴더 안에 이미지 파일을 저장해야 함-->
+    <!-- tag 안에 "속성" 있다-->
+    <img src="test1.jpg" width="80%">
+
+    <!------------------------------------------------------------------>
+    <parent>
+        <child> </child>
+    </parent>
+    <!--특정 부모태그와 특정 자식태그가 짝지어 다니는 경우가 있다-->
+</body>
+</html>
+
+
+<!-- <a> for anchor: 그것은 바로 링크!-->
